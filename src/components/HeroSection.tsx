@@ -17,10 +17,10 @@ export default function HeroSection() {
 
   const itemVariants = {
     hidden: { opacity: 0, y: 25 },
-    visible: { 
-      opacity: 1, 
-      y: 0, 
-      transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] } 
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] }
     },
   } as const;
 
@@ -41,8 +41,8 @@ export default function HeroSection() {
   };
 
   return (
-    <section 
-      id="home" 
+    <section
+      id="home"
       className="min-h-screen flex flex-col justify-center items-center relative px-4 md:px-8 py-20 pt-28 overflow-hidden select-none"
     >
       {/* Decorative Blur Bubble */}
@@ -105,10 +105,10 @@ export default function HeroSection() {
             <Briefcase size={16} className="group-hover:rotate-6 transition-transform" />
             <span>View Projects</span>
           </button>
-          
+
           <a
-            href="/Sharad_Mourya_Resume.md"
-            download="Sharad_Mourya_Resume.md"
+            href="/Sharad_Mourya_Latest.pdf"
+            download="Sharad_Mourya_Latest.pdf"
             className="w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-card-bg border border-card-border hover:border-emerald-accent/50 hover:bg-emerald-accent/5 text-foreground hover:text-emerald-accent font-semibold text-sm transition-all duration-300 cursor-pointer"
           >
             <FileDown size={16} />

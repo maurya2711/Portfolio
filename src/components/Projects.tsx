@@ -71,7 +71,7 @@ export default function Projects() {
       id: "news-ai-platform",
       title: "News & AI Content Platform",
       category: "Content Creation",
-      image: "/projects/news.png",
+      image: "/projects/news.jpg",
       tech: ["Next.js 15", "Tailwind CSS", "OpenAI API", "Prisma", "NextAuth.js"],
       challenge: "Rendering large-scale AI generated layouts dynamically on load without causing cumulative layout shifts (CLS) or slow loading speeds for mobile users.",
       solution: "Implemented Next.js 15 Streaming SSR with custom Suspense boundaries and skeleton loaders, loading text completion vectors incrementally via chunk streams.",
@@ -126,8 +126,8 @@ export default function Projects() {
               key={cat.key}
               onClick={() => setSelectedCategory(cat.key)}
               className={`px-4 py-2 rounded-lg text-xs md:text-sm font-semibold transition-all duration-300 whitespace-nowrap cursor-pointer ${selectedCategory === cat.key
-                  ? "bg-emerald-accent text-neutral-dark shadow-[0_0_12px_rgba(16,185,129,0.25)]"
-                  : "text-foreground/50 hover:text-foreground/80"
+                ? "bg-emerald-accent text-neutral-dark shadow-[0_0_12px_rgba(16,185,129,0.25)]"
+                : "text-foreground/50 hover:text-foreground/80"
                 }`}
             >
               {cat.label}

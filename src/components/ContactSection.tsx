@@ -36,14 +36,14 @@ export default function ContactSection() {
     setTimeout(() => {
       // Simulate successful dispatch
       setFormStatus("success");
-      
+
       // Auto-open mailto fallback
-      const mailtoUrl = `mailto:sharad.mourya@example.com?subject=${encodeURIComponent(
+      const mailtoUrl = `mailto:dev.frontend1997@gmail.com?subject=${encodeURIComponent(
         subject
       )}&body=From: ${encodeURIComponent(name)} (${encodeURIComponent(
         email
       )})%0A%0A${encodeURIComponent(message)}`;
-      
+
       window.location.href = mailtoUrl;
 
       // Clear fields
@@ -57,14 +57,14 @@ export default function ContactSection() {
   const contactCards = [
     {
       label: "Email",
-      val: "sharad.mourya@example.com",
-      link: "mailto:sharad.mourya@example.com",
+      val: "dev.frontend1997@gmail.com",
+      link: "mailto:dev.frontend1997@gmail.com",
       icon: Mail,
     },
     {
       label: "Phone",
-      val: "+91-XXXXXXXXXX",
-      link: "tel:+919999999999",
+      val: "+91-9810590475",
+      link: "tel:+9810590475",
       icon: Phone,
     },
     {
@@ -230,9 +230,8 @@ export default function ContactSection() {
               <button
                 type="submit"
                 disabled={formStatus === "submitting" || formStatus === "success"}
-                className={`w-full flex items-center justify-center gap-2 py-3 rounded-xl bg-emerald-accent text-neutral-dark font-semibold text-sm transition-all duration-300 shadow-[0_0_15px_rgba(16,185,129,0.15)] cursor-pointer hover:opacity-95 ${
-                  formStatus === "submitting" ? "opacity-75 cursor-not-allowed" : ""
-                }`}
+                className={`w-full flex items-center justify-center gap-2 py-3 rounded-xl bg-emerald-accent text-neutral-dark font-semibold text-sm transition-all duration-300 shadow-[0_0_15px_rgba(16,185,129,0.15)] cursor-pointer hover:opacity-95 ${formStatus === "submitting" ? "opacity-75 cursor-not-allowed" : ""
+                  }`}
               >
                 <Send size={14} />
                 <span>{formStatus === "submitting" ? "Sending Details..." : "Send Message"}</span>

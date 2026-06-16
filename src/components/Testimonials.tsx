@@ -17,25 +17,25 @@ export default function Testimonials() {
 
   const testimonials: Testimonial[] = [
     {
-      name: "Alex Reed",
-      role: "Director of Engineering",
-      company: "Sequifi",
+      name: "Prashant Singh",
+      role: "Team Lead",
+      company: "Ongraph",
       quote: "Sharad joined our team and immediately took ownership of the payroll engine overhaul. His mastery of React state management and attention to detailed edge cases saved us weeks of development time. An exceptional Frontend Engineer.",
       rating: 5,
     },
     {
-      name: "Meera Nair",
+      name: "Aakash Sirdhana",
       role: "Lead Product Designer",
       company: "Ongraph Technologies",
       quote: "Working with Sharad was a pleasure. He has that rare combination of developer logic and a deep eye for design aesthetics. Every micro-animation and pixel layout was executed exactly as mocked, often even better than designed.",
-      rating: 5,
+      rating: 4,
     },
     {
-      name: "Johnathan K.",
+      name: "Aditya Mishra",
       role: "Client Product Manager",
-      company: "Web3 Initiatives",
+      company: "Sequifi",
       quote: "We hired Sharad to optimize a high-traffic Web3 dashboard and integrate wallet authentications. He not only delivered the integrations on time but optimized our initial page load times by 40%. Highly recommend his services.",
-      rating: 5,
+      rating: 4,
     },
   ];
 
